@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 20 4"
+   version="1.1"
+   id="svg819"
+   sodipodi:docname="anim squiggle 3.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata825">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs823" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview821"
+     showgrid="false"
+     inkscape:zoom="35.575"
+     inkscape:cx="16.257768"
+     inkscape:cy="5.4457607"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg819" />
+  <path
+     class="st0"
+     d="m 0,2.1788475 c 5,0 5,-0.2733661 10,-0.2733661 5,0 5,0.2733661 10,0.2733661 5,0 5,-0.2733661 10,-0.2733661 5,0 5,0.2733661 10,0.2733661"
+     id="path815"
+     style="opacity:1;fill:none;stroke:#326dea;stroke-width:2.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="csssc" />
+  <style
+     type="text/css"
+     id="style817">
+        .st0 {
+            animation: shift 30s linear infinite;
+        }
+        @keyframes shift {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-20px);
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .st0 {
+            animation: none;
+          }
+        }
+        </style>
+</svg>

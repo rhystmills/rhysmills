@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<title>Rhys Mills</title>
+	<link rel="stylesheet" href="../styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="central tele-heading">
+			<h1>Hello, world. I'm <span class="red">Rhys</span>.</h1>
+			<h1 id="type-heading" class="hidden teletype">Welcome to my blog.</h1><h1 class="red inline blink"></h1>
+		</div>
+	</header>
+	<main>
+		<section>
+			<div class="central flex flex-horizontal mobile-column">
+				<ul class="profile-links flex-1">
+					<li style="margin-right: 0.5rem; color: #abb2bf;">
+						Find me:
+					</li>
+					<li>
+						<a href="https://github.com/rhystmills">
+							GitHub
+						</a>
+					</li>
+					<li style="color: #373e58">
+						||
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/rhys-mills/">
+							LinkedIn
+						</a>
+					</li>
+				</ul>
+				<ul class="path flex-1 mobile-left-align">
+					<li>
+						<a href="../index.html">
+							home
+						</a>
+					</li>
+					<li style="color: #abb2bf;">
+						/
+					</li>
+					<li>
+						<a href="">
+							blog
+						</a>
+					</li>
+					<li style="margin-right: 0.5rem; color: #abb2bf;">
+						/
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="central">
+			<h2>Posts:</h2>
+			<div class="double double-fill">
+				<div class="sunken project project-img project-fill">
+					<a href="https://www.owenherbert.co.uk/rain">
+						<img src="../craters-red.svg" alt="Vector graphic of crater positions and radii."/>
+					</a>
+				</div>
+				<div class="project">
+						<a href="https://www.owenherbert.co.uk/rain"><h3>Untitled (Rain)</h3></a>
+					<p>I helped develop Python software for this art project with Owen Herbert and Jon D'alton, converting rain sculptures into musical pieces.</p>
+					<p>We used the astronomical crater detection algorithm <a href="https://github.com/AlliedToasters/PyCDA">pycda</a> and midi data library <a href="https://github.com/cirlabs/miditime">miditime</a> to map rain impact craters on physical scuptures to notes in a piece of music.</p>
+				</div>
+			</div>
+			<div class="project">
+				<a href="https://chrome.google.com/webstore/detail/nasa-astronomy-picture-of/bechhfglhcdjmemhkmincgemjgcbeifa"><h3>NASA Astronomy Picture of the Day – Chrome extension</h3></a>
+				<p>Developed this extension, a React app replacing the Chrome New Tab with a gallery of inspiring pictures of the universe drawn from NASA's <a href="https://api.nasa.gov/">APOD API</a>, with a new image or video every day.</p>
+				</p>Incorporates a Node.js API endpoint in Amazon Lambda.</p>
+			</div>
+		</section>
+	</main>
+	<script src="../script.js">
+	</script>
+</body>
+</html>

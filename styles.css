@@ -1,0 +1,323 @@
+* {
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #eee;
+  box-sizing: content-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+/* ELEMENTS */
+
+/* - Semantic - */
+body {
+  background-color: #0f0f12;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  min-height: 2rem;
+  padding: 40px 0px;
+  background-color: #22222f;
+}
+
+section {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1, h1 span {
+  font-size: 2.1rem;
+  font-weight: 500;
+  font-family: 'Roboto Mono', monospace;
+}
+/* - Typographic - */
+h2{
+  color: #abb2bf;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+h3, h3 a {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+h3 a {
+  color: #56b6c2;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+p{
+  margin-top: 15px;
+  line-height: 1.4em;
+  font-size: 1rem;
+}
+li{
+  padding-bottom: 5px;
+}
+a {
+  color: #56b6c2;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
+/* CLASSES */
+.central {
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* - Display - */
+.inline {
+  display: inline;
+}
+.flex {
+  display: flex
+}
+.flex-horizontal {
+  flex-direction: row;
+}
+.flex-column::after {
+  flex-direction: column;
+}
+.flex-1 {
+  flex-grow: 1;
+}
+
+
+
+/* .sunken a {
+  color: #fff;
+  font-weight: 300;
+}
+
+.sunken a:hover {
+  color: #ddd;
+} */
+
+/* - Project - */
+
+.project {
+  background-color: #22222f;
+  padding: 1rem 1rem;
+}
+
+.project img {
+  object-fit: contain;
+  flex-grow: 1;
+  max-width: 100%;
+
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+}
+
+.project a {
+  text-decoration: underline;
+}
+.project a:hover {
+  color: #fff;
+}
+.project a h3:hover {
+  color: #56b6c2;
+}
+
+.double {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.double .project {
+  width: 100%;
+  flex-shrink: 1;
+}
+.double .project:first-child {
+  margin-right: 0.5rem
+}
+.double .project:last-child {
+  margin-left: 0.5rem
+}
+
+/* - Sunken - */
+.sunken {
+  background-color: #0f0f12;
+  color: #eee;
+}
+
+/* Colour */
+.red {
+  color: #e06c75;
+}
+.eee {
+  color: #eee;
+}
+/* Teletype */
+.teletype {
+  overflow: hidden;
+  display: inline;
+  margin: 0 auto;
+  min-height: 200px;
+}
+/* - Visibility - */
+.hidden {
+  display: none;
+}
+
+.visibility {
+  display: inline;
+}
+
+
+
+.blink {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #e06c75; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+/* Misc */
+.profile-links {
+  list-style-type: none;
+  display: inline-block;
+}
+.profile-links li {
+  display: inline-block;
+}
+.path {
+  list-style-type: none;
+  display: inline-block;
+  text-align: right;
+}
+.path li {
+  display: inline-block;
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #e06c75; }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 820px) {
+  .central {
+    max-width: 100vw;
+  }
+  .tele-heading {
+    padding-left: 1rem;
+  }
+
+  /* .tele-heading {
+    min-height: 9rem;
+  } */
+  /* header {
+    padding: 1rem 0rem 1rem 0rem;
+    letter-spacing: -0.02rem;
+  } */
+}
+@media only screen and (max-width: 720px) {
+  h1, h1 span {
+    font-size: 2rem;
+  }
+  .mobile-column {
+    flex-direction: column;
+  }
+  .mobile-left-align {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 670px) {
+  h1, h1 span {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 610px) {
+  h1, h1 span {
+    font-size: 1.7rem;
+  }
+  .double {
+    flex-direction: column;
+  }
+  .double .project {
+    width: auto;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .double-fill .project:first-child{
+    margin-bottom: 0;
+  }
+  .double-fill .project:last-child{
+    margin-top: 0;
+  }
+  .project img {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .project-img {
+    max-height: 25vh;
+  }
+  .project-fill {
+    padding: 0
+  }
+  .project-fill img {
+    max-height: 25vh;
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 570px) {
+  h1, h1 span {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 510px) {
+  h1, h1 span {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  header {
+    min-height: 85px;
+  }
+}
+ @media only screen and (max-width: 330px) {
+   h1, h1 span {
+     font-size: 1.2rem;
+   }
+}
+@media only screen and (max-width: 310px) {
+  header {
+    min-height: 104px;
+  }
+}
+/*
+@media only screen and (max-width: 350px) {
+  .tele-heading {
+    padding-left: 1.6rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .tele-heading {
+    padding-left: 1.4rem;
+  }
+} */
